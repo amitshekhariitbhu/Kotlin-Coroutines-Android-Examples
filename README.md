@@ -7,7 +7,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/blob/master/LICENSE)
 
-### About this project: 
+## About this project: 
 * If you want to get started with Kotlin Coroutines for Android Development and wants to master it, then this project is for you.
 * Common use-cases of Kotlin Coroutines in Android has been implemented in this project.
 
