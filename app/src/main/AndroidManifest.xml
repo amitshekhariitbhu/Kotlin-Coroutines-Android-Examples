@@ -30,6 +30,9 @@
         <activity
             android:name=".learn.room.RoomDBActivity"
             android:label="@string/room_database" />
+        <activity
+            android:name=".learn.timeout.TimeoutActivity"
+            android:label="@string/timeout" />
     </application>
 
 </manifest>

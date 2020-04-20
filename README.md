@@ -27,6 +27,7 @@
 * Using Kotlin Coroutines with Retrofit.
 * Using Kotlin Coroutines with Room Database.
 * Using Kotlin Coroutines with various 3rd party libraries.
+* Adding timeout to a task using Kotlin Coroutines.
 
 ## Kotlin Coroutines Examples for Android Development:
 * **Single Network Call:** Learn how to make a network call using Kotlin Coroutines.
@@ -44,6 +45,10 @@
 * **Room Database:** Learn how to fetch or insert entity in database using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBViewModel.kt) 
+
+* **Timeout:** Learn how to add timeout to a task using Kotlin Coroutines.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/timeout/TimeoutActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/timeout/TimeoutViewModel.kt) 
     
 ## The following project structure is followed for simplicity:
 <p align="left">

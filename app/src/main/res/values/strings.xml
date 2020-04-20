@@ -4,4 +4,5 @@
     <string name="series_network_calls">Series Network Calls</string>
     <string name="parallel_network_calls">Parallel Network Calls</string>
     <string name="room_database">Room Database</string>
+    <string name="timeout">Timeout</string>
 </resources>

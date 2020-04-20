@@ -43,5 +43,12 @@
             android:text="@string/room_database"
             android:textColor="@android:color/black" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startTimeoutActivity"
+            android:text="@string/timeout"
+            android:textColor="@android:color/black" />
+
     </LinearLayout>
 </ScrollView>

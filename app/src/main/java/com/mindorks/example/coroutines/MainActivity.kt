@@ -8,6 +8,7 @@ import com.mindorks.example.coroutines.learn.retrofit.parallel.ParallelNetworkCa
 import com.mindorks.example.coroutines.learn.retrofit.series.SeriesNetworkCallsActivity
 import com.mindorks.example.coroutines.learn.retrofit.single.SingleNetworkCallActivity
 import com.mindorks.example.coroutines.learn.room.RoomDBActivity
+import com.mindorks.example.coroutines.learn.timeout.TimeoutActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
     fun startRoomDatabaseActivity(view: View) {
         startActivity(Intent(this@MainActivity, RoomDBActivity::class.java))
+    }
+
+    fun startTimeoutActivity(view: View) {
+        startActivity(Intent(this@MainActivity, TimeoutActivity::class.java))
     }
 
 }

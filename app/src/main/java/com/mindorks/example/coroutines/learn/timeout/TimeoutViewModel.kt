@@ -8,9 +8,11 @@ import com.mindorks.example.coroutines.data.api.ApiHelper
 import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.data.model.ApiUser
 import com.mindorks.example.coroutines.utils.Resource
+import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withTimeout
 
-class SingleNetworkCallViewModel(
+class TimeoutViewModel(
     private val apiHelper: ApiHelper,
     private val dbHelper: DatabaseHelper
 ) : ViewModel() {
@@ -21,8 +23,12 @@ class SingleNetworkCallViewModel(
         viewModelScope.launch {
             users.postValue(Resource.loading(null))
             try {
-                val usersFromApi = apiHelper.getUsers()
-                users.postValue(Resource.success(usersFromApi))
+                withTimeout(100) {
+                    val usersFromApi = apiHelper.getUsers()
+                    users.postValue(Resource.success(usersFromApi))
+                }
+            } catch (e: TimeoutCancellationException) {
+                users.postValue(Resource.error("TimeoutCancellationException", null))
             } catch (e: Exception) {
                 users.postValue(Resource.error("Something Went Wrong", null))
             }
