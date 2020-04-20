@@ -10,8 +10,6 @@
 ### This project is for: 
 * who is just getting started with Kotlin Coroutines for Android Development and wants to master it.
 
-### [This project is under development]
-
 ### Just Build the project and start learning Kotlin Coroutines by examples.
 
 ## This Kotlin Coroutines Example Project will help you in learning the following for Android App Development:
@@ -30,15 +28,15 @@
 * Using Kotlin Coroutines with various 3rd party libraries.
 
 ## Kotlin Coroutines Examples for Android Development:
-* Single Network Call: Learn how to make a network call using Kotlin Coroutines.
+* **Single Network Call**: Learn how to make a network call using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallViewModel.kt)
  
-* Series Network Calls: Learn how to make network calls in series using Kotlin Coroutines.
+* **Series Network Calls**: Learn how to make network calls in series using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/series/SeriesNetworkCallsActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/series/SeriesNetworkCallsViewModel.kt)
     
-* Parallel Network Calls: Learn how to make network calls in parallel using Kotlin Coroutines.
+* **Parallel Network Calls**: Learn how to make network calls in parallel using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsViewModel.kt)         
 
