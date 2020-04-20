@@ -39,7 +39,11 @@
     
 * **Parallel Network Calls**: Learn how to make network calls in parallel using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsActivity.kt)
-    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsViewModel.kt)         
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsViewModel.kt)  
+    
+* **Room Database**: Learn how to make fetch or insert entity in database using Kotlin Coroutines.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBViewModel.kt)            
 
 ## If this project helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 

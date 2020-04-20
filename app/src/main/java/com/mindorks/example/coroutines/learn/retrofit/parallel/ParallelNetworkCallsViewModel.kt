@@ -5,13 +5,17 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mindorks.example.coroutines.data.api.ApiHelper
+import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.data.model.ApiUser
 import com.mindorks.example.coroutines.utils.Resource
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
-class ParallelNetworkCallsViewModel(private val apiHelper: ApiHelper) : ViewModel() {
+class ParallelNetworkCallsViewModel(
+    private val apiHelper: ApiHelper,
+    private val dbHelper: DatabaseHelper
+) : ViewModel() {
 
     private val users = MutableLiveData<Resource<List<ApiUser>>>()
 

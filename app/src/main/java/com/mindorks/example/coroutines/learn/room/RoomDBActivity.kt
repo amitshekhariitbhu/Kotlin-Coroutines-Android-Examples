@@ -1,4 +1,4 @@
-package com.mindorks.example.coroutines.learn.retrofit.parallel
+package com.mindorks.example.coroutines.learn.room
 
 import android.os.Bundle
 import android.view.View
@@ -13,17 +13,16 @@ import com.mindorks.example.coroutines.data.api.ApiHelper
 import com.mindorks.example.coroutines.data.api.RetrofitBuilder
 import com.mindorks.example.coroutines.data.local.DatabaseBuilder
 import com.mindorks.example.coroutines.data.local.DatabaseHelper
-import com.mindorks.example.coroutines.data.model.ApiUser
-import com.mindorks.example.coroutines.learn.base.ApiUserAdapter
-import com.mindorks.example.coroutines.learn.retrofit.series.ParallelNetworkCallsViewModel
+import com.mindorks.example.coroutines.data.local.entity.User
+import com.mindorks.example.coroutines.learn.base.UserAdapter
 import com.mindorks.example.coroutines.utils.Status
 import com.mindorks.example.coroutines.utils.ViewModelFactory
 import kotlinx.android.synthetic.main.activity_recycler_view.*
 
-class ParallelNetworkCallsActivity : AppCompatActivity() {
+class RoomDBActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: ParallelNetworkCallsViewModel
-    private lateinit var adapter: ApiUserAdapter
+    private lateinit var viewModel: RoomDBViewModel
+    private lateinit var adapter: UserAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +35,7 @@ class ParallelNetworkCallsActivity : AppCompatActivity() {
     private fun setupUI() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter =
-            ApiUserAdapter(
+            UserAdapter(
                 arrayListOf()
             )
         recyclerView.addItemDecoration(
@@ -70,7 +69,7 @@ class ParallelNetworkCallsActivity : AppCompatActivity() {
         viewModel.fetchUsers()
     }
 
-    private fun renderList(users: List<ApiUser>) {
+    private fun renderList(users: List<User>) {
         adapter.addData(users)
         adapter.notifyDataSetChanged()
     }
@@ -82,6 +81,6 @@ class ParallelNetworkCallsActivity : AppCompatActivity() {
                 ApiHelper(RetrofitBuilder.apiService),
                 DatabaseHelper(DatabaseBuilder.getInstance(applicationContext))
             )
-        ).get(ParallelNetworkCallsViewModel::class.java)
+        ).get(RoomDBViewModel::class.java)
     }
 }

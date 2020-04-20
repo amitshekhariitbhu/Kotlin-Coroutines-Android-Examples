@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.mindorks.example.coroutines.learn.retrofit.parallel.ParallelNetworkCallsActivity
 import com.mindorks.example.coroutines.learn.retrofit.series.SeriesNetworkCallsActivity
 import com.mindorks.example.coroutines.learn.retrofit.single.SingleNetworkCallActivity
+import com.mindorks.example.coroutines.learn.room.RoomDBActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
 
     fun startParallelNetworkCallsActivity(view: View) {
         startActivity(Intent(this@MainActivity, ParallelNetworkCallsActivity::class.java))
+    }
+
+    fun startRoomDatabaseActivity(view: View) {
+        startActivity(Intent(this@MainActivity, RoomDBActivity::class.java))
     }
 
 }

@@ -11,20 +11,22 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.mindorks.example.coroutines.R
 import com.mindorks.example.coroutines.data.api.ApiHelper
 import com.mindorks.example.coroutines.data.api.RetrofitBuilder
+import com.mindorks.example.coroutines.data.local.DatabaseBuilder
+import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.data.model.ApiUser
-import com.mindorks.example.coroutines.learn.retrofit.base.UserAdapter
+import com.mindorks.example.coroutines.learn.base.ApiUserAdapter
 import com.mindorks.example.coroutines.utils.Status
 import com.mindorks.example.coroutines.utils.ViewModelFactory
-import kotlinx.android.synthetic.main.activity_network_call.*
+import kotlinx.android.synthetic.main.activity_recycler_view.*
 
 class SingleNetworkCallActivity : AppCompatActivity() {
 
     private lateinit var viewModel: SingleNetworkCallViewModel
-    private lateinit var adapter: UserAdapter
+    private lateinit var adapter: ApiUserAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_network_call)
+        setContentView(R.layout.activity_recycler_view)
         setupUI()
         setupViewModel()
         setupAPICall()
@@ -33,7 +35,7 @@ class SingleNetworkCallActivity : AppCompatActivity() {
     private fun setupUI() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter =
-            UserAdapter(
+            ApiUserAdapter(
                 arrayListOf()
             )
         recyclerView.addItemDecoration(
@@ -75,7 +77,10 @@ class SingleNetworkCallActivity : AppCompatActivity() {
     private fun setupViewModel() {
         viewModel = ViewModelProviders.of(
             this,
-            ViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
+            ViewModelFactory(
+                ApiHelper(RetrofitBuilder.apiService),
+                DatabaseHelper(DatabaseBuilder.getInstance(applicationContext))
+            )
         ).get(SingleNetworkCallViewModel::class.java)
     }
 }

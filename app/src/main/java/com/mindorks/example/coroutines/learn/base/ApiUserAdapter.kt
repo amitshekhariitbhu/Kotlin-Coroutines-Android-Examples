@@ -1,4 +1,4 @@
-package com.mindorks.example.coroutines.learn.retrofit.base
+package com.mindorks.example.coroutines.learn.base
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,9 +9,9 @@ import com.mindorks.example.coroutines.R
 import com.mindorks.example.coroutines.data.model.ApiUser
 import kotlinx.android.synthetic.main.item_layout.view.*
 
-class UserAdapter(
+class ApiUserAdapter(
     private val users: ArrayList<ApiUser>
-) : RecyclerView.Adapter<UserAdapter.DataViewHolder>() {
+) : RecyclerView.Adapter<ApiUserAdapter.DataViewHolder>() {
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(user: ApiUser) {
