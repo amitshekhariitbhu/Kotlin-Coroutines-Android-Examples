@@ -50,6 +50,14 @@
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/timeout/TimeoutActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/timeout/TimeoutViewModel.kt) 
     
+* **Try-Catch Error Handling:** Learn how to handle error in Kotlin Coroutines using Try-Catch.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/trycatch/TryCatchActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/trycatch/TryCatchViewModel.kt)    
+
+* **CoroutineExceptionHandler:** Learn how to handle error in Kotlin Coroutines using CoroutineExceptionHandler.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerViewModel.kt)      
+    
 ## The following project structure is followed for simplicity:
 <p align="left">
     <img src="https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/project-structure.png" height="800">

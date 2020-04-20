@@ -1,4 +1,4 @@
-package com.mindorks.example.coroutines.learn.timeout
+package com.mindorks.example.coroutines.learn.errorhandling.exceptionhandler
 
 import android.os.Bundle
 import android.view.View
@@ -19,9 +19,9 @@ import com.mindorks.example.coroutines.utils.Status
 import com.mindorks.example.coroutines.utils.ViewModelFactory
 import kotlinx.android.synthetic.main.activity_recycler_view.*
 
-class TimeoutActivity : AppCompatActivity() {
+class ExceptionHandlerActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: TimeoutViewModel
+    private lateinit var viewModel: ExceptionHandlerViewModel
     private lateinit var adapter: ApiUserAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,6 +81,6 @@ class TimeoutActivity : AppCompatActivity() {
                 ApiHelper(RetrofitBuilder.apiService),
                 DatabaseHelper(DatabaseBuilder.getInstance(applicationContext))
             )
-        ).get(TimeoutViewModel::class.java)
+        ).get(ExceptionHandlerViewModel::class.java)
     }
 }

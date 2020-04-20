@@ -50,5 +50,19 @@
             android:text="@string/timeout"
             android:textColor="@android:color/black" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startTryCatchActivity"
+            android:text="@string/try_catch_error"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startExceptionHandlerActivity"
+            android:text="@string/exception_handler"
+            android:textColor="@android:color/black" />
+
     </LinearLayout>
 </ScrollView>

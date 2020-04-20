@@ -33,6 +33,12 @@
         <activity
             android:name=".learn.timeout.TimeoutActivity"
             android:label="@string/timeout" />
+        <activity
+            android:name=".learn.errorhandling.trycatch.TryCatchActivity"
+            android:label="@string/try_catch_error" />
+        <activity
+            android:name=".learn.errorhandling.exceptionhandler.ExceptionHandlerActivity"
+            android:label="@string/exception_handler" />
     </application>
 
 </manifest>

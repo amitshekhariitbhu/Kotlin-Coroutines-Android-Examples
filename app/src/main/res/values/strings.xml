@@ -5,4 +5,6 @@
     <string name="parallel_network_calls">Parallel Network Calls</string>
     <string name="room_database">Room Database</string>
     <string name="timeout">Timeout</string>
+    <string name="try_catch_error">Try-Catch Error</string>
+    <string name="exception_handler">ExceptionHandler</string>
 </resources>

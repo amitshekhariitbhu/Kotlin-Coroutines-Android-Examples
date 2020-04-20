@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.mindorks.example.coroutines.learn.errorhandling.exceptionhandler.ExceptionHandlerActivity
+import com.mindorks.example.coroutines.learn.errorhandling.trycatch.TryCatchActivity
 import com.mindorks.example.coroutines.learn.retrofit.parallel.ParallelNetworkCallsActivity
 import com.mindorks.example.coroutines.learn.retrofit.series.SeriesNetworkCallsActivity
 import com.mindorks.example.coroutines.learn.retrofit.single.SingleNetworkCallActivity
@@ -35,6 +37,14 @@ class MainActivity : AppCompatActivity() {
 
     fun startTimeoutActivity(view: View) {
         startActivity(Intent(this@MainActivity, TimeoutActivity::class.java))
+    }
+
+    fun startTryCatchActivity(view: View) {
+        startActivity(Intent(this@MainActivity, TryCatchActivity::class.java))
+    }
+
+    fun startExceptionHandlerActivity(view: View) {
+        startActivity(Intent(this@MainActivity, ExceptionHandlerActivity::class.java))
     }
 
 }

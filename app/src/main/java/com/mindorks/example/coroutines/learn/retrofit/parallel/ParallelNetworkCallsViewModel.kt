@@ -1,4 +1,4 @@
-package com.mindorks.example.coroutines.learn.retrofit.series
+package com.mindorks.example.coroutines.learn.retrofit.parallel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

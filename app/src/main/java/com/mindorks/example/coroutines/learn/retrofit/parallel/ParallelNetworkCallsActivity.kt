@@ -15,7 +15,6 @@ import com.mindorks.example.coroutines.data.local.DatabaseBuilder
 import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.data.model.ApiUser
 import com.mindorks.example.coroutines.learn.base.ApiUserAdapter
-import com.mindorks.example.coroutines.learn.retrofit.series.ParallelNetworkCallsViewModel
 import com.mindorks.example.coroutines.utils.Status
 import com.mindorks.example.coroutines.utils.ViewModelFactory
 import kotlinx.android.synthetic.main.activity_recycler_view.*

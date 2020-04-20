@@ -1,4 +1,4 @@
-package com.mindorks.example.coroutines.learn.timeout
+package com.mindorks.example.coroutines.learn.errorhandling.trycatch
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -8,11 +8,9 @@ import com.mindorks.example.coroutines.data.api.ApiHelper
 import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.data.model.ApiUser
 import com.mindorks.example.coroutines.utils.Resource
-import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withTimeout
 
-class TimeoutViewModel(
+class TryCatchViewModel(
     private val apiHelper: ApiHelper,
     private val dbHelper: DatabaseHelper
 ) : ViewModel() {
@@ -23,12 +21,8 @@ class TimeoutViewModel(
         viewModelScope.launch {
             users.postValue(Resource.loading(null))
             try {
-                withTimeout(100) {
-                    val usersFromApi = apiHelper.getUsers()
-                    users.postValue(Resource.success(usersFromApi))
-                }
-            } catch (e: TimeoutCancellationException) {
-                users.postValue(Resource.error("TimeoutCancellationException", null))
+                val usersFromApi = apiHelper.getUsers()
+                users.postValue(Resource.success(usersFromApi))
             } catch (e: Exception) {
                 users.postValue(Resource.error("Something Went Wrong", null))
             }
