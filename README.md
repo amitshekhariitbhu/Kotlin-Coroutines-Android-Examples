@@ -12,7 +12,7 @@
 * Common use-cases of Kotlin Coroutines in Android has been implemented in this project.
 
 ## Steps to learn Kotlin Coroutines by examples from this project
-* First, learn the concepts of Kotlin Coroutines from this [blog]((https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide))
+* First, learn the concepts of Kotlin Coroutines from this [blog](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
 * Then, just clone, build, run the project and start learning Kotlin Coroutines by examples.
 
 ## This Kotlin Coroutines Example Project will help you in learning the following for Android App Development:
