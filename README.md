@@ -43,7 +43,13 @@
     
 * **Room Database**: Learn how to make fetch or insert entity in database using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBActivity.kt)
-    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBViewModel.kt)            
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBViewModel.kt) 
+    
+## The following project structure is followed for simplicity:
+<p align="center">
+    <img src="https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/project-structure.png">
+</p>
+<br>               
 
 ## If this project helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 
