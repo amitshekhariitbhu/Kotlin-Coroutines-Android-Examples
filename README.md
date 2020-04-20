@@ -29,19 +29,19 @@
 * Using Kotlin Coroutines with various 3rd party libraries.
 
 ## Kotlin Coroutines Examples for Android Development:
-* **Single Network Call**: Learn how to make a network call using Kotlin Coroutines.
+* **Single Network Call:** Learn how to make a network call using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallViewModel.kt)
  
-* **Series Network Calls**: Learn how to make network calls in series using Kotlin Coroutines.
+* **Series Network Calls:** Learn how to make network calls in series using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/series/SeriesNetworkCallsActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/series/SeriesNetworkCallsViewModel.kt)
     
-* **Parallel Network Calls**: Learn how to make network calls in parallel using Kotlin Coroutines.
+* **Parallel Network Calls:** Learn how to make network calls in parallel using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsViewModel.kt)  
     
-* **Room Database**: Learn how to make fetch or insert entity in database using Kotlin Coroutines.
+* **Room Database:** Learn how to fetch or insert entity in database using Kotlin Coroutines.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBViewModel.kt) 
     
