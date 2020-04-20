@@ -8,4 +8,7 @@ interface ApiService {
     @GET("users")
     suspend fun getUsers(): List<User>
 
+    @GET("more-users")
+    suspend fun getMoreUsers(): List<User>
+
 }

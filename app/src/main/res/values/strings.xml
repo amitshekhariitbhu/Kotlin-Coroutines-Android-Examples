@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Kotlin-Coroutines-Android-Examples</string>
     <string name="single_network_call">Single Network Call</string>
+    <string name="series_network_calls">Series Network Calls</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.mindorks.example.coroutines.learn.retrofit.single
+package com.mindorks.example.coroutines.learn.retrofit.series
 
 import android.os.Bundle
 import android.view.View
@@ -17,9 +17,9 @@ import com.mindorks.example.coroutines.utils.Status
 import com.mindorks.example.coroutines.utils.ViewModelFactory
 import kotlinx.android.synthetic.main.activity_network_call.*
 
-class SingleNetworkCallActivity : AppCompatActivity() {
+class SeriesNetworkCallsActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: SingleNetworkCallViewModel
+    private lateinit var viewModel: SeriesNetworkCallsViewModel
     private lateinit var adapter: UserAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -76,6 +76,6 @@ class SingleNetworkCallActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(
             this,
             ViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
-        ).get(SingleNetworkCallViewModel::class.java)
+        ).get(SeriesNetworkCallsViewModel::class.java)
     }
 }

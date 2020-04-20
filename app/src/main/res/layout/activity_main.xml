@@ -22,5 +22,12 @@
             android:text="@string/single_network_call"
             android:textColor="@android:color/black" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startSeriesNetworkCallsActivity"
+            android:text="@string/series_network_calls"
+            android:textColor="@android:color/black" />
+
     </LinearLayout>
 </ScrollView>

@@ -1,5 +1,4 @@
-package com.mindorks.example.coroutines.learn.retrofit.single
-
+package com.mindorks.example.coroutines.learn.retrofit.base
 
 import android.view.LayoutInflater
 import android.view.View
@@ -10,9 +9,9 @@ import com.mindorks.example.coroutines.R
 import com.mindorks.example.coroutines.data.model.User
 import kotlinx.android.synthetic.main.item_layout.view.*
 
-class SingleNetworkCallAdapter(
+class UserAdapter(
     private val users: ArrayList<User>
-) : RecyclerView.Adapter<SingleNetworkCallAdapter.DataViewHolder>() {
+) : RecyclerView.Adapter<UserAdapter.DataViewHolder>() {
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(user: User) {
