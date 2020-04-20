@@ -7,10 +7,11 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/blob/master/LICENSE)
 
-### This project is for: 
-* who is just getting started with Kotlin Coroutines for Android Development and wants to master it.
+### About this project: 
+* If you want to get started with Kotlin Coroutines for Android Development and wants to master it, then this project is for you.
+* Common use-cases of Kotlin Coroutines in Android has been implemented in this project.
 
-### Just Build the project and start learning Kotlin Coroutines by examples.
+## Just Build the project and start learning Kotlin Coroutines by examples.
 
 ## This Kotlin Coroutines Example Project will help you in learning the following for Android App Development:
 * What are Kotlin Coroutines? [Learn from here](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
