@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.mindorks.example.coroutines.R
 import com.mindorks.example.coroutines.data.api.ApiHelper
 import com.mindorks.example.coroutines.data.api.RetrofitBuilder
-import com.mindorks.example.coroutines.data.model.User
+import com.mindorks.example.coroutines.data.model.ApiUser
 import com.mindorks.example.coroutines.learn.retrofit.base.UserAdapter
 import com.mindorks.example.coroutines.learn.retrofit.series.ParallelNetworkCallsViewModel
 import com.mindorks.example.coroutines.utils.Status
@@ -68,7 +68,7 @@ class ParallelNetworkCallsActivity : AppCompatActivity() {
         viewModel.fetchUsers()
     }
 
-    private fun renderList(users: List<User>) {
+    private fun renderList(users: List<ApiUser>) {
         adapter.addData(users)
         adapter.notifyDataSetChanged()
     }

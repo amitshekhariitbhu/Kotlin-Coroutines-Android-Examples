@@ -6,15 +6,15 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mindorks.example.coroutines.R
-import com.mindorks.example.coroutines.data.model.User
+import com.mindorks.example.coroutines.data.model.ApiUser
 import kotlinx.android.synthetic.main.item_layout.view.*
 
 class UserAdapter(
-    private val users: ArrayList<User>
+    private val users: ArrayList<ApiUser>
 ) : RecyclerView.Adapter<UserAdapter.DataViewHolder>() {
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(user: User) {
+        fun bind(user: ApiUser) {
             itemView.textViewUserName.text = user.name
             itemView.textViewUserEmail.text = user.email
             Glide.with(itemView.imageViewAvatar.context)
@@ -36,7 +36,7 @@ class UserAdapter(
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) =
         holder.bind(users[position])
 
-    fun addData(list: List<User>) {
+    fun addData(list: List<ApiUser>) {
         users.addAll(list)
     }
 

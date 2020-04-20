@@ -5,13 +5,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mindorks.example.coroutines.data.api.ApiHelper
-import com.mindorks.example.coroutines.data.model.User
+import com.mindorks.example.coroutines.data.model.ApiUser
 import com.mindorks.example.coroutines.utils.Resource
 import kotlinx.coroutines.launch
 
 class SingleNetworkCallViewModel(private val apiHelper: ApiHelper) : ViewModel() {
 
-    private val users = MutableLiveData<Resource<List<User>>>()
+    private val users = MutableLiveData<Resource<List<ApiUser>>>()
 
     fun fetchUsers() {
         viewModelScope.launch {
@@ -24,7 +24,7 @@ class SingleNetworkCallViewModel(private val apiHelper: ApiHelper) : ViewModel()
         }
     }
 
-    fun getUsers(): LiveData<Resource<List<User>>> {
+    fun getUsers(): LiveData<Resource<List<ApiUser>>> {
         return users
     }
 
