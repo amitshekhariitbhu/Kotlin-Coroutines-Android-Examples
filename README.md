@@ -11,10 +11,12 @@
 * If you want to get started with Kotlin Coroutines for Android Development and wants to master it, then this project is for you.
 * Common use-cases of Kotlin Coroutines in Android has been implemented in this project.
 
-## Just Build the project and start learning Kotlin Coroutines by examples.
+## Steps to learn Kotlin Coroutines by examples from this project
+* First, learn the concepts of Kotlin Coroutines from this [blog]((https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide))
+* Then, just clone, build, run the project and start learning Kotlin Coroutines by examples.
 
 ## This Kotlin Coroutines Example Project will help you in learning the following for Android App Development:
-* What are Kotlin Coroutines? [Learn from here](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
+* What are Kotlin Coroutines?
 * How to use Kotlin Coroutines in Android App Development?
 * Step by step guide on how to implement the Kotlin Coroutines in Android.
 * Doing simple task in background using Kotlin Coroutines.
