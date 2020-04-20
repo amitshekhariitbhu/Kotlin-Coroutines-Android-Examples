@@ -46,7 +46,7 @@
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBViewModel.kt) 
     
 ## The following project structure is followed for simplicity:
-<p align="center">
+<p align="left">
     <img src="https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/project-structure.png" height="800">
 </p>
 <br>               
