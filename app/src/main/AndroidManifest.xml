@@ -24,6 +24,9 @@
         <activity
             android:name=".learn.retrofit.series.SeriesNetworkCallsActivity"
             android:label="@string/series_network_calls" />
+        <activity
+            android:name=".learn.retrofit.parallel.ParallelNetworkCallsActivity"
+            android:label="@string/parallel_network_calls" />
     </application>
 
 </manifest>

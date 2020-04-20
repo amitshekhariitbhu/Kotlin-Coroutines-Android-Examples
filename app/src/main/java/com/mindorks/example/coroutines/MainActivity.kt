@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.mindorks.example.coroutines.learn.retrofit.parallel.ParallelNetworkCallsActivity
 import com.mindorks.example.coroutines.learn.retrofit.series.SeriesNetworkCallsActivity
 import com.mindorks.example.coroutines.learn.retrofit.single.SingleNetworkCallActivity
 
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
 
     fun startSeriesNetworkCallsActivity(view: View) {
         startActivity(Intent(this@MainActivity, SeriesNetworkCallsActivity::class.java))
+    }
+
+    fun startParallelNetworkCallsActivity(view: View) {
+        startActivity(Intent(this@MainActivity, ParallelNetworkCallsActivity::class.java))
     }
 
 }
