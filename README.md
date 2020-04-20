@@ -29,6 +29,19 @@
 * Using Kotlin Coroutines with Room Database.
 * Using Kotlin Coroutines with various 3rd party libraries.
 
+## Kotlin Coroutines Examples for Android Development:
+* Single Network Call: Learn how to make a network call using Kotlin Coroutines.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallViewModel.kt)
+ 
+* Series Network Calls: Learn how to make network calls in series using Kotlin Coroutines.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/series/SeriesNetworkCallsActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/series/SeriesNetworkCallsViewModel.kt)
+    
+* Parallel Network Calls: Learn how to make network calls in parallel using Kotlin Coroutines.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsViewModel.kt)         
+
 ## If this project helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 
 [Check out MindOrks awesome open source projects here](https://mindorks.com/open-source-projects)
