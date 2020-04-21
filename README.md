@@ -1,4 +1,4 @@
-<img src=https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/banner-coroutines.jpg >
+<img src=https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/banner-kotlin-coroutines.jpg >
 
 # Kotlin-Coroutines-Android-Examples - Learn Kotlin Coroutines for Android by Examples
 
