@@ -10,6 +10,7 @@
 ## About this project: 
 * If you want to get started with Kotlin Coroutines for Android Development and wants to master it, then this project is for you.
 * Common use-cases of Kotlin Coroutines in Android has been implemented in this project.
+* Also, learn to write Unit-Test for ViewModel which uses Kotlin Coroutines.
 * This is your one-stop solution for learning Kotlin Coroutines for Android Development.
 
 ## Steps to learn Kotlin Coroutines by examples from this project
@@ -31,6 +32,7 @@
 * Using Kotlin Coroutines with Room Database.
 * Using Kotlin Coroutines with various 3rd party libraries.
 * Adding timeout to a task using Kotlin Coroutines.
+* Writing Unit-Test for ViewModel which uses Kotlin Coroutines.
 
 ## Kotlin Coroutines Examples for Android Development:
 * **Single Network Call:** Learn how to make a network call using Kotlin Coroutines. This is a very simple use-case in Android App Development.
@@ -64,6 +66,9 @@
 * **CoroutineExceptionHandler:** Learn how to handle error in Kotlin Coroutines using CoroutineExceptionHandler.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerViewModel.kt)      
+
+* **Unit Test:** Learn how write unit-test for ViewModel which uses Kotlin Coroutines.
+    * [ViewModelTest Code](app/src/test/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallViewModelTest.kt)
 
 ## More references useful during learning the Kotlin Coroutines for Android from this project
 * [Use ViewModelScope For Less Boilerplate Code With Coroutines](https://medium.com/mindorks/use-viewmodelscope-for-less-boilerplate-code-with-coroutines-79c7fa19aa8f)

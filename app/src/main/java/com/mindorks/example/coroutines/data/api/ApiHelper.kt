@@ -1,9 +1,11 @@
 package com.mindorks.example.coroutines.data.api
 
-class ApiHelper(private val apiService: ApiService) {
+import com.mindorks.example.coroutines.data.model.ApiUser
 
-    suspend fun getUsers() = apiService.getUsers()
+interface ApiHelper {
 
-    suspend fun getMoreUsers() = apiService.getMoreUsers()
+    suspend fun getUsers(): List<ApiUser>
+
+    suspend fun getMoreUsers(): List<ApiUser>
 
 }

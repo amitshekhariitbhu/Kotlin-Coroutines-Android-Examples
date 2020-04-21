@@ -7,10 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.mindorks.example.coroutines.R
-import com.mindorks.example.coroutines.data.api.ApiHelper
+import com.mindorks.example.coroutines.data.api.ApiHelperImpl
 import com.mindorks.example.coroutines.data.api.RetrofitBuilder
 import com.mindorks.example.coroutines.data.local.DatabaseBuilder
 import com.mindorks.example.coroutines.data.local.DatabaseHelper
+import com.mindorks.example.coroutines.data.local.DatabaseHelperImpl
 import com.mindorks.example.coroutines.utils.Status
 import com.mindorks.example.coroutines.utils.ViewModelFactory
 import kotlinx.android.synthetic.main.activity_long_running_task.*
@@ -53,8 +54,8 @@ class LongRunningTaskActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(
             this,
             ViewModelFactory(
-                ApiHelper(RetrofitBuilder.apiService),
-                DatabaseHelper(DatabaseBuilder.getInstance(applicationContext))
+                ApiHelperImpl(RetrofitBuilder.apiService),
+                DatabaseHelperImpl(DatabaseBuilder.getInstance(applicationContext))
             )
         ).get(LongRunningTaskViewModel::class.java)
     }
