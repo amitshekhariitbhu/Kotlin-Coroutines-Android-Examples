@@ -10,6 +10,7 @@ import com.mindorks.example.coroutines.learn.retrofit.parallel.ParallelNetworkCa
 import com.mindorks.example.coroutines.learn.retrofit.series.SeriesNetworkCallsViewModel
 import com.mindorks.example.coroutines.learn.retrofit.single.SingleNetworkCallViewModel
 import com.mindorks.example.coroutines.learn.room.RoomDBViewModel
+import com.mindorks.example.coroutines.learn.task.LongRunningTaskViewModel
 import com.mindorks.example.coroutines.learn.timeout.TimeoutViewModel
 
 class ViewModelFactory(private val apiHelper: ApiHelper, private val dbHelper: DatabaseHelper) :
@@ -36,6 +37,9 @@ class ViewModelFactory(private val apiHelper: ApiHelper, private val dbHelper: D
         }
         if (modelClass.isAssignableFrom(ExceptionHandlerViewModel::class.java)) {
             return ExceptionHandlerViewModel(apiHelper, dbHelper) as T
+        }
+        if (modelClass.isAssignableFrom(LongRunningTaskViewModel::class.java)) {
+            return LongRunningTaskViewModel(apiHelper, dbHelper) as T
         }
         throw IllegalArgumentException("Unknown class name")
     }

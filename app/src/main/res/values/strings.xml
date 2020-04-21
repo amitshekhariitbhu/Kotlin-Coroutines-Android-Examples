@@ -7,4 +7,5 @@
     <string name="timeout">Timeout</string>
     <string name="try_catch_error">Try-Catch Error</string>
     <string name="exception_handler">ExceptionHandler</string>
+    <string name="long_running_task">Long Running Task</string>
 </resources>

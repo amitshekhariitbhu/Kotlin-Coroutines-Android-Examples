@@ -10,6 +10,7 @@ import com.mindorks.example.coroutines.learn.retrofit.parallel.ParallelNetworkCa
 import com.mindorks.example.coroutines.learn.retrofit.series.SeriesNetworkCallsActivity
 import com.mindorks.example.coroutines.learn.retrofit.single.SingleNetworkCallActivity
 import com.mindorks.example.coroutines.learn.room.RoomDBActivity
+import com.mindorks.example.coroutines.learn.task.LongRunningTaskActivity
 import com.mindorks.example.coroutines.learn.timeout.TimeoutActivity
 
 class MainActivity : AppCompatActivity() {
@@ -45,6 +46,10 @@ class MainActivity : AppCompatActivity() {
 
     fun startExceptionHandlerActivity(view: View) {
         startActivity(Intent(this@MainActivity, ExceptionHandlerActivity::class.java))
+    }
+
+    fun startLongRunningTaskActivity(view: View) {
+        startActivity(Intent(this@MainActivity, LongRunningTaskActivity::class.java))
     }
 
 }

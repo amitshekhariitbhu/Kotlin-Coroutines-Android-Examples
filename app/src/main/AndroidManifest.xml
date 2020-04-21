@@ -39,6 +39,9 @@
         <activity
             android:name=".learn.errorhandling.exceptionhandler.ExceptionHandlerActivity"
             android:label="@string/exception_handler" />
+        <activity
+            android:name=".learn.task.LongRunningTaskActivity"
+            android:label="@string/long_running_task" />
     </application>
 
 </manifest>
