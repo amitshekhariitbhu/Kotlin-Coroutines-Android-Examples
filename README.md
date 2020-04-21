@@ -10,6 +10,7 @@
 ## About this project: 
 * If you want to get started with Kotlin Coroutines for Android Development and wants to master it, then this project is for you.
 * Common use-cases of Kotlin Coroutines in Android has been implemented in this project.
+* This is your one-stop solution for learning Kotlin Coroutines for Android Development.
 
 ## Steps to learn Kotlin Coroutines by examples from this project
 * First, learn the concepts of Kotlin Coroutines from this [blog](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
@@ -59,12 +60,15 @@
 * **CoroutineExceptionHandler:** Learn how to handle error in Kotlin Coroutines using CoroutineExceptionHandler.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerViewModel.kt)      
+
+## More references useful during learning the Kotlin Coroutines for Android from this project
+* [Use ViewModelScope For Less Boilerplate Code With Coroutines](https://medium.com/mindorks/use-viewmodelscope-for-less-boilerplate-code-with-coroutines-79c7fa19aa8f)
     
 ## The following project structure is followed for simplicity:
 <p align="left">
     <img src="https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/project-structure.png" height="800">
 </p>
-<br>               
+<br>          
 
 ## If this project helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 
