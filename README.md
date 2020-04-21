@@ -75,7 +75,7 @@
     
 ## The following project structure is followed for simplicity:
 <p align="left">
-    <img src="https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/project-structure.png" height="800">
+    <img src="https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/project-structure-learn.png">
 </p>
 <br>          
 
