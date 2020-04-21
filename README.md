@@ -32,23 +32,23 @@
 * Adding timeout to a task using Kotlin Coroutines.
 
 ## Kotlin Coroutines Examples for Android Development:
-* **Single Network Call:** Learn how to make a network call using Kotlin Coroutines.
+* **Single Network Call:** Learn how to make a network call using Kotlin Coroutines. This is a very simple use-case in Android App Development.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallViewModel.kt)
  
-* **Series Network Calls:** Learn how to make network calls in series using Kotlin Coroutines.
+* **Series Network Calls:** Learn how to make network calls in series using Kotlin Coroutines. This is useful when you want to make a network call which is dependent on an another network call.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/series/SeriesNetworkCallsActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/series/SeriesNetworkCallsViewModel.kt)
     
-* **Parallel Network Calls:** Learn how to make network calls in parallel using Kotlin Coroutines.
+* **Parallel Network Calls:** Learn how to make network calls in parallel using Kotlin Coroutines. This is useful when you want to make network calls in parallel which are independent of each other.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/retrofit/parallel/ParallelNetworkCallsViewModel.kt)  
     
-* **Room Database:** Learn how to fetch or insert entity in database using Kotlin Coroutines.
+* **Room Database:** Learn how to fetch or insert entity in database using Kotlin Coroutines. This is useful when you are using Room Database in your Android Application.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBViewModel.kt) 
 
-* **Timeout:** Learn how to add timeout to a task using Kotlin Coroutines.
+* **Timeout:** Learn how to add timeout to a task using Kotlin Coroutines. If you want to add a timeout to any of your background task in Android, this is going to super useful.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/timeout/TimeoutActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/timeout/TimeoutViewModel.kt) 
     
