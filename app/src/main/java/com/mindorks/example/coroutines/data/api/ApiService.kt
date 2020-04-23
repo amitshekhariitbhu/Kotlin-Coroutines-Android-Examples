@@ -11,4 +11,7 @@ interface ApiService {
     @GET("more-users")
     suspend fun getMoreUsers(): List<ApiUser>
 
+    @GET("error")
+    suspend fun getUsersWithError(): List<ApiUser>
+
 }

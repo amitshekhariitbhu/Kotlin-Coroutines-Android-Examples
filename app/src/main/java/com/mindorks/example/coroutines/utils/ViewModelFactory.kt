@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.mindorks.example.coroutines.data.api.ApiHelper
 import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.learn.errorhandling.exceptionhandler.ExceptionHandlerViewModel
+import com.mindorks.example.coroutines.learn.errorhandling.supervisor.IgnoreErrorAndContinueViewModel
 import com.mindorks.example.coroutines.learn.errorhandling.trycatch.TryCatchViewModel
 import com.mindorks.example.coroutines.learn.retrofit.parallel.ParallelNetworkCallsViewModel
 import com.mindorks.example.coroutines.learn.retrofit.series.SeriesNetworkCallsViewModel
@@ -44,6 +45,9 @@ class ViewModelFactory(private val apiHelper: ApiHelper, private val dbHelper: D
         }
         if (modelClass.isAssignableFrom(TwoLongRunningTasksViewModel::class.java)) {
             return TwoLongRunningTasksViewModel(apiHelper, dbHelper) as T
+        }
+        if (modelClass.isAssignableFrom(IgnoreErrorAndContinueViewModel::class.java)) {
+            return IgnoreErrorAndContinueViewModel(apiHelper, dbHelper) as T
         }
         throw IllegalArgumentException("Unknown class name")
     }

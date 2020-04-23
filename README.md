@@ -71,6 +71,10 @@
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerViewModel.kt)      
 
+* **Ignore Error And Continue:** Learn how to use `supervisorScope` to ignore error of a task and continue with other task. In other words, if more than two child jobs are running parallel under a supervisor, one child job gets failed, you can continue with other.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/supervisor/IgnoreErrorAndContinueActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/supervisor/IgnoreErrorAndContinueViewModel.kt)   
+
 * **Unit Test:** Learn how write unit-test for ViewModel which uses Kotlin Coroutines.
     * [ViewModelTest Code](app/src/test/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallViewModelTest.kt)
 

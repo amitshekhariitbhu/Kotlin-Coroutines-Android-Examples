@@ -7,6 +7,7 @@
     <string name="timeout">Timeout</string>
     <string name="try_catch_error">Try-Catch Error</string>
     <string name="exception_handler">ExceptionHandler</string>
+    <string name="ignore_error_and_continue">Ignore Error And Continue</string>
     <string name="long_running_task">Long Running Task</string>
     <string name="two_long_running_tasks">Two Long Running Tasks</string>
 </resources>

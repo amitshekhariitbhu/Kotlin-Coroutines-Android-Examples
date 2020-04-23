@@ -40,6 +40,9 @@
             android:name=".learn.errorhandling.exceptionhandler.ExceptionHandlerActivity"
             android:label="@string/exception_handler" />
         <activity
+            android:name=".learn.errorhandling.supervisor.IgnoreErrorAndContinueActivity"
+            android:label="@string/ignore_error_and_continue" />
+        <activity
             android:name=".learn.task.onetask.LongRunningTaskActivity"
             android:label="@string/long_running_task" />
         <activity

@@ -67,6 +67,13 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="startIgnoreErrorAndContinueActivity"
+            android:text="@string/ignore_error_and_continue"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="startLongRunningTaskActivity"
             android:text="@string/long_running_task"
             android:textColor="@android:color/black" />
