@@ -23,7 +23,7 @@ class LongRunningTaskViewModel(
         viewModelScope.launch {
             status.postValue(Resource.loading(null))
             try {
-                // do a long running task before fetching the users, just for example
+                // do a long running task
                 doLongRunningTask()
                 status.postValue(Resource.success("Task Completed"))
             } catch (e: Exception) {
