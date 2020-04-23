@@ -81,6 +81,13 @@
 </p>
 <br>
 
+## Video showing how to get started with this project, [check here](https://www.youtube.com/watch?v=nKgvsZxyQs8)
+<a href="https://www.youtube.com/watch?v=nKgvsZxyQs8" target="_blank">
+<p align="center">
+    <img src="https://raw.githubusercontent.com/MindorksOpenSource/Kotlin-Coroutines-Android-Examples/master/assets/video-project-guide.png">
+</p>
+</a>
+
 ## Explore Android Online Tutorials and Courses To Learn More by MindOrks
 * [Ride-Sharing Uber Lyft Android App](https://github.com/MindorksOpenSource/ridesharing-uber-lyft-app) - Learn to build a ride-sharing Android Taxi Clone App like Uber, Lyft - Open-Source Project By MindOrks
 * [Android Tutorial](https://mindorks.com/android-tutorial) - All Free Android Tutorials by MindOrks
