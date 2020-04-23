@@ -71,5 +71,12 @@
             android:text="@string/long_running_task"
             android:textColor="@android:color/black" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startTwoLongRunningTasksActivity"
+            android:text="@string/two_long_running_tasks"
+            android:textColor="@android:color/black" />
+
     </LinearLayout>
 </ScrollView>

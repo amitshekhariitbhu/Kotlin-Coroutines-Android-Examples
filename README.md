@@ -52,8 +52,12 @@
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/room/RoomDBViewModel.kt) 
 
 * **Long Running Task:** Learn how to do a long running task using Kotlin Coroutines. If you want to do any of your task in background thread using the Kotlin Coroutines, then this is useful.
-    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/task/LongRunningTaskActivity.kt)
-    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/task/LongRunningTaskViewModel.kt) 
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/task/onetask/LongRunningTaskActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/task/onetask/LongRunningTaskViewModel.kt) 
+    
+* **Two Long Running Tasks:** Learn how to run two long running tasks in parallel using Kotlin Coroutines.
+    * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/task/twotasks/TwoLongRunningTasksActivity.kt)
+    * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/task/twotasks/TwoLongRunningTasksViewModel.kt)     
 
 * **Timeout:** Learn how to add timeout to a task using Kotlin Coroutines. If you want to add a timeout to any of your background task in Android, this is going to super useful.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/timeout/TimeoutActivity.kt)

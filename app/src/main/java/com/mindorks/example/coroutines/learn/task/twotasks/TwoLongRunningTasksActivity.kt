@@ -1,4 +1,4 @@
-package com.mindorks.example.coroutines.learn.task
+package com.mindorks.example.coroutines.learn.task.twotasks
 
 import android.os.Bundle
 import android.view.View
@@ -10,16 +10,15 @@ import com.mindorks.example.coroutines.R
 import com.mindorks.example.coroutines.data.api.ApiHelperImpl
 import com.mindorks.example.coroutines.data.api.RetrofitBuilder
 import com.mindorks.example.coroutines.data.local.DatabaseBuilder
-import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.data.local.DatabaseHelperImpl
 import com.mindorks.example.coroutines.utils.Status
 import com.mindorks.example.coroutines.utils.ViewModelFactory
 import kotlinx.android.synthetic.main.activity_long_running_task.*
 import kotlinx.android.synthetic.main.activity_recycler_view.progressBar
 
-class LongRunningTaskActivity : AppCompatActivity() {
+class TwoLongRunningTasksActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: LongRunningTaskViewModel
+    private lateinit var viewModel: TwoLongRunningTasksViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +56,6 @@ class LongRunningTaskActivity : AppCompatActivity() {
                 ApiHelperImpl(RetrofitBuilder.apiService),
                 DatabaseHelperImpl(DatabaseBuilder.getInstance(applicationContext))
             )
-        ).get(LongRunningTaskViewModel::class.java)
+        ).get(TwoLongRunningTasksViewModel::class.java)
     }
 }

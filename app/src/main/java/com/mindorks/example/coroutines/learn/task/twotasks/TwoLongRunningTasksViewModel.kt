@@ -1,4 +1,4 @@
-package com.mindorks.example.coroutines.learn.task
+package com.mindorks.example.coroutines.learn.task.twotasks
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -7,12 +7,9 @@ import androidx.lifecycle.viewModelScope
 import com.mindorks.example.coroutines.data.api.ApiHelper
 import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.utils.Resource
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 
-class LongRunningTaskViewModel(
+class TwoLongRunningTasksViewModel(
     private val apiHelper: ApiHelper,
     private val dbHelper: DatabaseHelper
 ) : ViewModel() {
@@ -23,9 +20,12 @@ class LongRunningTaskViewModel(
         viewModelScope.launch {
             status.postValue(Resource.loading(null))
             try {
-                // do a long running task
-                doLongRunningTask()
-                status.postValue(Resource.success("Task Completed"))
+                // do long running tasks
+                val resultOneDeferred = async { doLongRunningTaskOne() }
+                val resultTwoDeferred = async { doLongRunningTaskTwo() }
+                val combinedResult = resultOneDeferred.await() + resultTwoDeferred.await()
+
+                status.postValue(Resource.success("Task Completed : $combinedResult"))
             } catch (e: Exception) {
                 status.postValue(Resource.error("Something Went Wrong", null))
             }
@@ -36,11 +36,21 @@ class LongRunningTaskViewModel(
         return status
     }
 
-    private suspend fun doLongRunningTask() {
-        withContext(Dispatchers.Default) {
+    private suspend fun doLongRunningTaskOne(): String {
+        return withContext(Dispatchers.Default) {
             // your code for doing a long running task
             // Added delay to simulate
             delay(5000)
+            return@withContext "One"
+        }
+    }
+
+    private suspend fun doLongRunningTaskTwo(): String {
+        return withContext(Dispatchers.Default) {
+            // your code for doing a long running task
+            // Added delay to simulate
+            delay(5000)
+            return@withContext "Two"
         }
     }
 

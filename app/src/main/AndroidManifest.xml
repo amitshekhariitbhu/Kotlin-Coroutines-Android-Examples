@@ -40,8 +40,11 @@
             android:name=".learn.errorhandling.exceptionhandler.ExceptionHandlerActivity"
             android:label="@string/exception_handler" />
         <activity
-            android:name=".learn.task.LongRunningTaskActivity"
+            android:name=".learn.task.onetask.LongRunningTaskActivity"
             android:label="@string/long_running_task" />
+        <activity
+            android:name=".learn.task.twotasks.TwoLongRunningTasksActivity"
+            android:label="@string/two_long_running_tasks" />
     </application>
 
 </manifest>
