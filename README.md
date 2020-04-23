@@ -14,7 +14,7 @@
 * This is your one-stop solution for learning Kotlin Coroutines for Android Development.
 
 ## Steps to learn Kotlin Coroutines by examples from this project
-* First, learn the concepts of Kotlin Coroutines from this [blog](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
+* First, learn the concepts of Kotlin Coroutines from this **[blog](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)**
 * Then, just clone, build, run the project and start learning Kotlin Coroutines by examples.
 
 ## This Kotlin Coroutines Example Project will help you in learning the following for Android App Development:
@@ -70,7 +70,9 @@
 * **Unit Test:** Learn how write unit-test for ViewModel which uses Kotlin Coroutines.
     * [ViewModelTest Code](app/src/test/java/com/mindorks/example/coroutines/learn/retrofit/single/SingleNetworkCallViewModelTest.kt)
 
-## More references useful during learning the Kotlin Coroutines for Android from this project
+## References useful during learning the Kotlin Coroutines for Android from this project
+* [Mastering Kotlin Coroutines In Android - Step By Step Guide](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
+* [Parallel Multiple Network Calls Using Kotlin Coroutines](https://blog.mindorks.com/parallel-multiple-network-calls-using-kotlin-coroutines)
 * [Use ViewModelScope For Less Boilerplate Code With Coroutines](https://medium.com/mindorks/use-viewmodelscope-for-less-boilerplate-code-with-coroutines-79c7fa19aa8f)
 * [Unit Testing ViewModel with Kotlin Coroutines and LiveData](https://blog.mindorks.com/unit-testing-viewmodel-with-kotlin-coroutines-and-livedata)
 * [Mockito cannot mock because : final class in Kotlin](https://blog.mindorks.com/mockito-cannot-mock-in-kotlin)
