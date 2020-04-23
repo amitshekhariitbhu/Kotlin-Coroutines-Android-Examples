@@ -71,7 +71,7 @@
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/exceptionhandler/ExceptionHandlerViewModel.kt)      
 
-* **Ignore Error And Continue:** Learn how to use `supervisorScope` to ignore error of a task and continue with other task. In other words, if more than two child jobs are running parallel under a supervisor, one child job gets failed, you can continue with other.
+* **Ignore Error And Continue:** Learn how to use `supervisorScope` to ignore error of a task and continue with other task. In other words, if more than two child jobs are running in parallel under a supervisor, one child job gets failed, we can continue with other.
     * [Activity Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/supervisor/IgnoreErrorAndContinueActivity.kt)
     * [ViewModel Code](app/src/main/java/com/mindorks/example/coroutines/learn/errorhandling/supervisor/IgnoreErrorAndContinueViewModel.kt)   
 
