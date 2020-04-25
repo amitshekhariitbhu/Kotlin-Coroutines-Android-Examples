@@ -83,6 +83,7 @@
 * [Parallel Multiple Network Calls Using Kotlin Coroutines](https://blog.mindorks.com/parallel-multiple-network-calls-using-kotlin-coroutines)
 * [Use ViewModelScope For Less Boilerplate Code With Coroutines](https://medium.com/mindorks/use-viewmodelscope-for-less-boilerplate-code-with-coroutines-79c7fa19aa8f)
 * [Unit Testing ViewModel with Kotlin Coroutines and LiveData](https://blog.mindorks.com/unit-testing-viewmodel-with-kotlin-coroutines-and-livedata)
+* [Exception Handling in Kotlin Coroutines](https://blog.mindorks.com/exception-handling-in-kotlin-coroutines)
 * [Mockito cannot mock because : final class in Kotlin](https://blog.mindorks.com/mockito-cannot-mock-in-kotlin)
     
 ## The following project structure is followed for simplicity:
