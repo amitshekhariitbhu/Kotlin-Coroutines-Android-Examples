@@ -19,7 +19,11 @@ class TimeoutViewModel(
 
     private val users = MutableLiveData<Resource<List<ApiUser>>>()
 
-    fun fetchUsers() {
+    init {
+        fetchUsers()
+    }
+
+    private fun fetchUsers() {
         viewModelScope.launch {
             users.postValue(Resource.loading(null))
             try {

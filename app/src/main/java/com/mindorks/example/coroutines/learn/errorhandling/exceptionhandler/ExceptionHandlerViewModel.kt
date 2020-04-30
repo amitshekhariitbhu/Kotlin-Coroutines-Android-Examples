@@ -22,7 +22,11 @@ class ExceptionHandlerViewModel(
         users.postValue(Resource.error("Something Went Wrong", null))
     }
 
-    fun fetchUsers() {
+    init {
+        fetchUsers()
+    }
+
+    private fun fetchUsers() {
         viewModelScope.launch(exceptionHandler) {
             users.postValue(Resource.loading(null))
             val usersFromApi = apiHelper.getUsers()

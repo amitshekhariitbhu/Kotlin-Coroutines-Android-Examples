@@ -29,7 +29,7 @@ class TryCatchActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recycler_view)
         setupUI()
         setupViewModel()
-        setupAPICall()
+        setupObserver()
     }
 
     private fun setupUI() {
@@ -47,7 +47,7 @@ class TryCatchActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
     }
 
-    private fun setupAPICall() {
+    private fun setupObserver() {
         viewModel.getUsers().observe(this, Observer {
             when (it.status) {
                 Status.SUCCESS -> {
@@ -66,7 +66,6 @@ class TryCatchActivity : AppCompatActivity() {
                 }
             }
         })
-        viewModel.fetchUsers()
     }
 
     private fun renderList(users: List<ApiUser>) {

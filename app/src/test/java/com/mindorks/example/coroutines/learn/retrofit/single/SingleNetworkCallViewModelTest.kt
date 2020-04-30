@@ -38,12 +38,9 @@ class SingleNetworkCallViewModelTest {
     @Mock
     private lateinit var apiUsersObserver: Observer<Resource<List<ApiUser>>>
 
-    private lateinit var viewModel: SingleNetworkCallViewModel
-
     @Before
     fun setUp() {
-        viewModel = SingleNetworkCallViewModel(apiHelper, databaseHelper)
-        viewModel.getUsers().observeForever(apiUsersObserver)
+        // do something if required
     }
 
     @Test
@@ -52,9 +49,11 @@ class SingleNetworkCallViewModelTest {
             doReturn(emptyList<ApiUser>())
                 .`when`(apiHelper)
                 .getUsers()
-            viewModel.fetchUsers()
+            val viewModel = SingleNetworkCallViewModel(apiHelper, databaseHelper)
+            viewModel.getUsers().observeForever(apiUsersObserver)
             verify(apiHelper).getUsers()
             verify(apiUsersObserver).onChanged(Resource.success(emptyList()))
+            viewModel.getUsers().removeObserver(apiUsersObserver)
         }
     }
 
@@ -64,15 +63,17 @@ class SingleNetworkCallViewModelTest {
             doReturn(Exception())
                 .`when`(apiHelper)
                 .getUsers()
-            viewModel.fetchUsers()
+            val viewModel = SingleNetworkCallViewModel(apiHelper, databaseHelper)
+            viewModel.getUsers().observeForever(apiUsersObserver)
             verify(apiHelper).getUsers()
             verify(apiUsersObserver).onChanged(Resource.error("Something Went Wrong", null))
+            viewModel.getUsers().removeObserver(apiUsersObserver)
         }
     }
 
     @After
     fun tearDown() {
-        viewModel.getUsers().removeObserver(apiUsersObserver)
+        // do something if required
     }
 
 }

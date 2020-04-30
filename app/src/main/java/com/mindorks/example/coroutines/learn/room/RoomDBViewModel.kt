@@ -15,7 +15,11 @@ class RoomDBViewModel(private val apiHelper: ApiHelper, private val dbHelper: Da
 
     private val users = MutableLiveData<Resource<List<User>>>()
 
-    fun fetchUsers() {
+    init {
+        fetchUsers()
+    }
+
+    private fun fetchUsers() {
         viewModelScope.launch {
             users.postValue(Resource.loading(null))
             try {
