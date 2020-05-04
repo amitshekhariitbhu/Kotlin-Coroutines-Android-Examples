@@ -7,7 +7,9 @@ import androidx.lifecycle.viewModelScope
 import com.mindorks.example.coroutines.data.api.ApiHelper
 import com.mindorks.example.coroutines.data.local.DatabaseHelper
 import com.mindorks.example.coroutines.utils.Resource
-import kotlinx.coroutines.*
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class TwoLongRunningTasksViewModel(
     private val apiHelper: ApiHelper,
@@ -37,21 +39,13 @@ class TwoLongRunningTasksViewModel(
     }
 
     private suspend fun doLongRunningTaskOne(): String {
-        return withContext(Dispatchers.Default) {
-            // your code for doing a long running task
-            // Added delay to simulate
-            delay(5000)
-            return@withContext "One"
-        }
+        delay(5000)
+        return "One"
     }
 
     private suspend fun doLongRunningTaskTwo(): String {
-        return withContext(Dispatchers.Default) {
-            // your code for doing a long running task
-            // Added delay to simulate
-            delay(5000)
-            return@withContext "Two"
-        }
+        delay(5000)
+        return "Two"
     }
 
 }
