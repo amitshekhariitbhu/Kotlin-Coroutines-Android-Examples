@@ -80,6 +80,7 @@
 
 ## References useful during learning the Kotlin Coroutines for Android from this project
 * [Mastering Kotlin Coroutines In Android - Step By Step Guide](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
+* [What is suspend function in Kotlin Coroutines?](https://blog.mindorks.com/suspend-function-in-kotlin-coroutines)
 * [Parallel Multiple Network Calls Using Kotlin Coroutines](https://blog.mindorks.com/parallel-multiple-network-calls-using-kotlin-coroutines)
 * [Use ViewModelScope For Less Boilerplate Code With Coroutines](https://medium.com/mindorks/use-viewmodelscope-for-less-boilerplate-code-with-coroutines-79c7fa19aa8f)
 * [Launch vs Async in Kotlin Coroutines](https://www.youtube.com/watch?v=nC30UiDv8Xc)
