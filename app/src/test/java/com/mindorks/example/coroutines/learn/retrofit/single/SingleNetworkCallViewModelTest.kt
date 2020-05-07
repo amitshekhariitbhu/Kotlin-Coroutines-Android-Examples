@@ -15,8 +15,7 @@ import org.junit.Test
 import org.junit.rules.TestRule
 import org.junit.runner.RunWith
 import org.mockito.Mock
-import org.mockito.Mockito.doReturn
-import org.mockito.Mockito.verify
+import org.mockito.Mockito.*
 import org.mockito.junit.MockitoJUnitRunner
 
 @ExperimentalCoroutinesApi
@@ -60,13 +59,19 @@ class SingleNetworkCallViewModelTest {
     @Test
     fun givenServerResponseError_whenFetch_shouldReturnError() {
         testCoroutineRule.runBlockingTest {
-            doReturn(Exception())
+            val errorMessage = "Error Message For You"
+            doThrow(RuntimeException(errorMessage))
                 .`when`(apiHelper)
                 .getUsers()
             val viewModel = SingleNetworkCallViewModel(apiHelper, databaseHelper)
             viewModel.getUsers().observeForever(apiUsersObserver)
             verify(apiHelper).getUsers()
-            verify(apiUsersObserver).onChanged(Resource.error("Something Went Wrong", null))
+            verify(apiUsersObserver).onChanged(
+                Resource.error(
+                    RuntimeException(errorMessage).toString(),
+                    null
+                )
+            )
             viewModel.getUsers().removeObserver(apiUsersObserver)
         }
     }
