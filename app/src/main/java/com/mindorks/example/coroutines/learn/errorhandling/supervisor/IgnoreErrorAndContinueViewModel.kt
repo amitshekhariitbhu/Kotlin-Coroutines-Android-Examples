@@ -36,13 +36,13 @@ class IgnoreErrorAndContinueViewModel(
                     val usersFromApi = try {
                         usersFromApiDeferred.await()
                     } catch (e: Exception) {
-                        emptyList<ApiUser>()
+                        emptyList()
                     }
 
                     val moreUsersFromApi = try {
                         moreUsersFromApiDeferred.await()
                     } catch (e: Exception) {
-                        emptyList<ApiUser>()
+                        emptyList()
                     }
 
                     val allUsersFromApi = mutableListOf<ApiUser>()
