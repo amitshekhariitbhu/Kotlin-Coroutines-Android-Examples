@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.mindorks.example.coroutines.R
 import com.mindorks.example.coroutines.data.api.ApiHelperImpl
@@ -28,7 +27,7 @@ class TwoLongRunningTasksActivity : AppCompatActivity() {
     }
 
     private fun setupLongRunningTask() {
-        viewModel.getStatus().observe(this, Observer {
+        viewModel.getStatus().observe(this, {
             when (it.status) {
                 Status.SUCCESS -> {
                     progressBar.visibility = View.GONE
